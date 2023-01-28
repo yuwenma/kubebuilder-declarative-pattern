@@ -41,7 +41,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
 	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/mockkubeapiserver"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/mockkubeapiserver"
 )
 
 var kubeconfig = flag.String("kubeconfig", "", "set to use a real kube-apiserver")
