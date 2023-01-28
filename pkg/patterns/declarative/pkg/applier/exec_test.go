@@ -26,7 +26,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
 )
 
 // collector is a commandSite implementation that stubs cmd.Run() calls for tests

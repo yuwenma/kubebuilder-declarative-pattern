@@ -28,8 +28,8 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	clientgoscheme "k8s.io/client-go/kubernetes/scheme"
 	"sigs.k8s.io/controller-runtime/pkg/scheme"
-	addonv1alpha1 "sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/apis/v1alpha1"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
+	addonv1alpha1 "github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/apis/v1alpha1"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
 )
 
 func Test_AddLabels(t *testing.T) {

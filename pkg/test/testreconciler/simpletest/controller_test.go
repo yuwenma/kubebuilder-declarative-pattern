@@ -16,14 +16,14 @@ import (
 	"k8s.io/klog/v2/klogr"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"sigs.k8s.io/kubebuilder-declarative-pattern/mockkubeapiserver"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/loaders"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/applier"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/restmapper"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/httprecorder"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/testharness"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/mockkubeapiserver"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/loaders"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/applier"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/restmapper"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/test/httprecorder"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/test/testharness"
 
-	api "sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/testreconciler/simpletest/v1alpha1"
+	api "github.com/yuwenma/kubebuilder-declarative-pattern/pkg/test/testreconciler/simpletest/v1alpha1"
 )
 
 func TestSimpleReconciler(t *testing.T) {

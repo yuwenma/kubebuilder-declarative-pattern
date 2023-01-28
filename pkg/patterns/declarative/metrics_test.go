@@ -36,10 +36,10 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/mockkubeapiserver"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/applier"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/restmapper"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/mockkubeapiserver"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/applier"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/restmapper"
 	"sigs.k8s.io/yaml"
 )
 

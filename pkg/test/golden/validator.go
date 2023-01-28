@@ -33,11 +33,11 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/diff"
 	"sigs.k8s.io/controller-runtime/pkg/scheme"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/loaders"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/mocks"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/addon"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/loaders"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/test/mocks"
 	"sigs.k8s.io/kustomize/kyaml/filesys"
 )
 

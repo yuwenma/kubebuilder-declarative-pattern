@@ -20,7 +20,7 @@ import (
 	"k8s.io/kubectl/pkg/cmd/apply"
 	cmdDelete "k8s.io/kubectl/pkg/cmd/delete"
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
 )
 
 type DirectApplier struct {

@@ -30,10 +30,10 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/addon"
 
-	addonsv1alpha1 "sigs.k8s.io/kubebuilder-declarative-pattern/examples/guestbook-operator/api/v1alpha1"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/examples/guestbook-operator/controllers"
+	addonsv1alpha1 "github.com/yuwenma/kubebuilder-declarative-pattern/examples/guestbook-operator/api/v1alpha1"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/examples/guestbook-operator/controllers"
 	//+kubebuilder:scaffold:imports
 )
 

@@ -117,8 +117,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 	"sigs.k8s.io/controller-runtime/pkg/source"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/status"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/status"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative"
 
 	api "example.org/guestbook-operator/api/v1alpha1"
 )
@@ -206,7 +206,7 @@ includes the version specifier.
 	```go
 	import (
 		//..
-		"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon"
+		"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/addon"
 	)
 	func main() {
 		// after: ctrl.SetLogger(zap.Logger(true))
@@ -527,4 +527,4 @@ status that can be surfaced in various user interfaces.
 
 * Read about [adding tests](tests.md)
 * Remove cruft from the manifest yaml (Namespaces, Names, Labels)
-* Explore avaliable [options](https://godoc.org/sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative)
+* Explore avaliable [options](https://godoc.org/github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative)

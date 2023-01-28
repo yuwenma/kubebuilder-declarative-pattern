@@ -8,7 +8,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/dynamic"
 
-	"sigs.k8s.io/kubebuilder-declarative-pattern/applylib/applyset"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/applylib/applyset"
 )
 
 type ApplySetApplier struct {

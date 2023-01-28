@@ -26,12 +26,12 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 	"sigs.k8s.io/controller-runtime/pkg/source"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/status"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/applier"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/addon"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/status"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/applier"
 
-	api "sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/testreconciler/simpletest/v1alpha1"
+	api "github.com/yuwenma/kubebuilder-declarative-pattern/pkg/test/testreconciler/simpletest/v1alpha1"
 )
 
 var _ reconcile.Reconciler = &SimpleTestReconciler{}

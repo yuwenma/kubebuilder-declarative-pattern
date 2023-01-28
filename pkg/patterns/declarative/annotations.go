@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
 )
 
 // AddAnnotations returns an ObjectTransform that adds annotations to all the objects

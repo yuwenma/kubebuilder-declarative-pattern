@@ -13,11 +13,11 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/rest"
 	"k8s.io/klog/v2"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/mockkubeapiserver"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
-	controllerrestmapper "sigs.k8s.io/kubebuilder-declarative-pattern/pkg/restmapper"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/httprecorder"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/testharness"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/mockkubeapiserver"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
+	controllerrestmapper "github.com/yuwenma/kubebuilder-declarative-pattern/pkg/restmapper"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/test/httprecorder"
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/test/testharness"
 )
 
 func TestApplySetApplier(t *testing.T) {
