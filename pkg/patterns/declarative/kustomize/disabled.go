@@ -4,6 +4,8 @@
 package kustomize
 
 import (
+	"fmt"
+
 	"sigs.k8s.io/kustomize/kyaml/filesys"
 )
 
@@ -16,5 +18,5 @@ var _ Kustomizer = &NoopKustomize{}
 type NoopKustomize struct{}
 
 func (k *NoopKustomize) Run(fs filesys.FileSystem, manifestPath string) ([]byte, error) {
-	return nil, nil
+	return nil, fmt.Errorf("!!!!!NoopKustomize!!!!!")
 }

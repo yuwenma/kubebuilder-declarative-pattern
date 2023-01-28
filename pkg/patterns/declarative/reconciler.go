@@ -23,9 +23,9 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/kustomize"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/api/meta"
-	"github.com/yuwenma/kubebuilder-declarative-pattern/pkg/patterns/declarative/kustomize"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
@@ -386,10 +386,13 @@ func (r *Reconciler) BuildDeploymentObjectsWithFs(ctx context.Context, name type
 		manifestObjects.Blobs = append(manifestObjects.Blobs, objects.Blobs...)
 	}
 
+	log.WithValues("YUWENMAkk", "1").Info("start")
+
 	// If Kustomize option is on, it's assumed that the entire addon manifest is created using Kustomize
 	// Here, the manifest is built using Kustomize and then replaces the Object items with the created manifest
 	if r.IsKustomizeOptionUsed() {
 		manifestYaml, err := kustomize.Kustomize.Run(fs, manifestObjects.Path)
+		log.WithValues("YUWENMAkk", "2").Info(err.Error())
 		objects, err := r.parseManifest(ctx, instance, string(manifestYaml))
 		if err != nil {
 			log.Error(err, "creating final manifest yaml")
@@ -402,6 +405,7 @@ func (r *Reconciler) BuildDeploymentObjectsWithFs(ctx context.Context, name type
 		}
 		manifestObjects.Items = objects.Items
 	}
+	log.WithValues("YUWENMAkk", "3").Info("END")
 
 	// 6. Sort objects to work around dependent objects in the same manifest (eg: service-account, deployment)
 	manifestObjects.Sort(DefaultObjectOrder(ctx))

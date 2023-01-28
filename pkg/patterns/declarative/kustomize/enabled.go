@@ -17,7 +17,7 @@ func init() {
 var _ Kustomizer = &EnabledKustomize{}
 
 type EnabledKustomize struct{}
-x
+
 func (k *EnabledKustomize) Run(fs filesys.FileSystem, manifestPath string) ([]byte, error) {
 	// run kustomize to create final manifest
 	opts := krusty.MakeDefaultOptions()
@@ -31,5 +31,5 @@ func (k *EnabledKustomize) Run(fs filesys.FileSystem, manifestPath string) ([]by
 	if err != nil {
 		return nil, fmt.Errorf("error converting kustomize output to yaml: %v", err)
 	}
-	return manifestYaml, nil
+	return manifestYaml, fmt.Errorf("!!!!!EnabledKustomize!!!!!")
 }
