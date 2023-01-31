@@ -25,13 +25,13 @@ WithApplyPrune turns on the --prune behavior of kubectl apply. This behavior del
 This option requires (WithLabels)[#withLabels] to be used.
 
 ## WithOwner
-WithOwner sets an owner ref on each deployed object by the (OwnerSelector)[https://github.com/kubernetes-sigs/kubebuilder-declarative-pattern/blob/master/pkg/patterns/declarative/options.go#L74].
+WithOwner sets an owner ref on each deployed object by the [OwnerSelector].
 
 ## WithLabels
 WithLabels sets a fixed set of labels configured provided by a LabelMaker to all deployment objecs for a given DeclarativeObject
 
 ## WithStatus
-WithStatus provides a (Status)[https://github.com/kubernetes-sigs/kubebuilder-declarative-pattern/blob/master/pkg/patterns/declarative/status.go#L26] interface that will be used during Reconcile.
+WithStatus provides a [Status] interface that will be used during Reconcile.
 
 ## WithPreserveNamespace
 WithPreserveNamespace preserves the namespaces defined in the deployment manifest
@@ -48,3 +48,7 @@ WithApplyValidation enables validation with kubectl apply
 
 ## WithReconcileMetrics
 WithReconcileMetrics enables metrics of declarative reconciler.
+
+
+[OwnerSelector]: https://github.com/kubernetes-sigs/kubebuilder-declarative-pattern/blob/master/pkg/patterns/declarative/options.go#L74
+[Status]: https://github.com/kubernetes-sigs/kubebuilder-declarative-pattern/blob/master/pkg/patterns/declarative/status.go#L26
