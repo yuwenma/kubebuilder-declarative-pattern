@@ -38,7 +38,7 @@ WithPreserveNamespace preserves the namespaces defined in the deployment manifes
 instead of matching the namespace of the DeclarativeObject
 
 ## WithApplyKustomize
-WithApplyKustomize run kustomize build to create final manifest
+WithApplyKustomize run kustomize build to create final manifest. This feature adds go dependency `kustomize/api` to your go.mod. If you do not use this feature and want to exclude the `kustomize/api` dependecy, you can opt out via go build tag `without-kustomize`. e.g. `go run ./main.go -tags without-kustomize`
 
 ## WithManagedApplication
 WithManagedApplication is a transform that will modify the Application object in the deployment to match the configuration of the rest of the deployment.
